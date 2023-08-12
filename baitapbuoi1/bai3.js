@@ -8,12 +8,12 @@ const getPosts = async () => {
   console.log(data2);
   const main = document.querySelector(".container");
   let html = "";
-  for (let i = 0; i < data2.length; i++) {
+  for (let i = 0; i < data.length; i++) {
     var PostId = data2[i].postId;
-    var id = data2[i].id;
-    var name = data2[i].name;
-    var email = data2[i].email;
-    var body = data2[i].body;
+    var id = data[i].id;
+    var name = data[i].name;
+    var email = data[i].email;
+    var body = data[i].body;
     html += `
       <h3>${PostId}</h3>
       <h3>${id}</h3>
