@@ -36,21 +36,3 @@ let b = 2;
 
 let result = filterRange(arr, a, b);
 console.log(result);
-//bai 5
-function filterRange1(arr, a, b) {
-  let filteredArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > a && arr[i] < b) {
-      filteredArr.push(arr[i]);
-    }
-  }
-  return filteredArr;
-}
-
-function filterRange1(arr, a, b) {
-  for (let i = arr.length - 1; i >= 0; i--) {
-    if (!(arr[i] > a && arr[i] < b)) {
-      arr.splice(i, 1);
-    }
-  }
-}
