@@ -2,6 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebas
 import {
   getAuth,
   createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
 } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
 const firebaseConfig = {
   apiKey: "AIzaSyCOsRmVijgRAQTGdXqvCnBVTcQXYtgh99k",
@@ -23,6 +24,23 @@ export const createUser = (auth, email, password) => {
     .catch((error) => {
       alert("Dang ky that bai");
       console.log(error.code);
+    });
+};
+export const signInUser = (auth, email, password) => {
+  signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      alert("Dang nhap thanh cong");
+      location.href = "home.html";
+      localStorage.setItem("signIn", true);
+      const user = userCredential.user;
+      // ...
+    })
+    .catch((error) => {
+      alert("Dang nhap that bai");
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode);
+      console.log(errorMessage);
     });
 };
 //   createUserWithEmailAndPassword(auth, email, password);
