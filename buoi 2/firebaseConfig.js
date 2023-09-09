@@ -1,9 +1,10 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
-import {
-  getAuth,
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-} from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-SERVICE.js";
+// import {
+//   getAuth,
+//   createUserWithEmailAndPassword,
+//   signInWithEmailAndPassword,
+// } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
 const firebaseConfig = {
   apiKey: "AIzaSyCOsRmVijgRAQTGdXqvCnBVTcQXYtgh99k",
   authDomain: "jsi-tt.firebaseapp.com",
@@ -20,6 +21,7 @@ export const createUser = (auth, email, password) => {
   createUserWithEmailAndPassword(auth, email, password)
     .then((res) => {
       alert("Dang ky thanh cong");
+      location.href = "index.html";
     })
     .catch((error) => {
       alert("Dang ky that bai");
