@@ -16,4 +16,4 @@ const getSpotify = async (query) => {
     console.error(error);
   }
 };
-getSpotify("son tung mtp");
+getSpotify();
