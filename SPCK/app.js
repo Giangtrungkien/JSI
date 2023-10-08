@@ -16,4 +16,8 @@ const getSpotify = async (query) => {
     console.error(error);
   }
 };
-getSpotify();
+// getSpotify();
+
+document.querySelector("#inputSearch").addEventListener("input", () => {
+  console.log(document.querySelector("#inputSearch").value);
+});
