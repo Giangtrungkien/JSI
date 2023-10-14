@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   background-color: black;
+  color: white;
 }
 .All {
   display: flex;
@@ -150,4 +151,82 @@
 .top-songs iframe {
   height: 90px;
   margin-bottom: 3px;
+}
+.wrapper-artists {
+  margin-right: 30px;
+  height: 300px;
+  width: 200px;
+}
+.wrapper-artists:hover {
+  color: white;
+  background-color: rgb(52, 52, 52);
+  border-radius: 5%;
+  width: 300px;
+}
+.wrapper-artists h2 {
+  background-color: transparent;
+  padding-left: 10px;
+  font-size: 30px;
+}
+
+.wrapper-artists p {
+  background-color: transparent;
+  padding-left: 20px;
+  color: gray;
+}
+.Artist {
+  margin-left: 10px;
+  width: calc((100% / 5)-10px);
+  color: white;
+  display: flex;
+}
+.Artist img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.Artist h1 {
+  margin-bottom: 30px;
+}
+.Artist .wrapper-artists img {
+  width: 100%;
+}
+.wrapper-albums {
+  margin-right: 30px;
+  height: 300px;
+  width: 200px;
+}
+.wrapper-albums:hover {
+  color: white;
+  background-color: rgb(52, 52, 52);
+  border-radius: 5%;
+  width: 300px;
+}
+.wrapper-albums h2 {
+  background-color: transparent;
+  padding-left: 10px;
+  font-size: 30px;
+}
+
+.wrapper-albums p {
+  background-color: transparent;
+  padding-left: 20px;
+  color: gray;
+}
+.Albums {
+  margin-left: 10px;
+  width: calc((100% / 5)-10px);
+  color: white;
+  display: flex;
+}
+.Albums img {
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+}
+.Albums h1 {
+  margin-bottom: 30px;
+}
+.Albums .wrapper-albums img {
+  width: 100%;
 }
